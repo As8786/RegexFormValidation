@@ -1,0 +1,49 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+  font-style: oblique;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
+  font-style: oblique;
+}
+
+form {
+  width: 500px;
+  margin: 20px auto;
+}
+input {
+  display: block;
+  padding: 8px 16px;
+  font-size: 1.3em;
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  outline: none;
+}
+.valid {
+  border: 3px solid #36cc36;
+}
+
+input + p {
+  padding: 0 20px;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(252, 196, 92);
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  height: auto;
+  opacity: 1;
+}
+
+.invalid {
+  border: 3px solid rgb(255, 186, 59);
+}
